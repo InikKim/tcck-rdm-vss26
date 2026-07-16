@@ -1,10 +1,10 @@
-# TCC_vonMises_rdm
+# TCC_precision_rdm
 
 Modeling visual working-memory recall errors for motion using random dot motion task (Roitman & Shadlen, 2002) with a varient of the **Target Confusability Competition (TCC)** model (Schurgin, Wixted & Brady, 2020).
 
 | Experiment | Manipulation | Conditions | N |
 |---|---|---|---|
-| Exp 1 (`data_exp1.mat`) | motion-direction noise (SD) | 8° / 16° / 32° | 38 |
+| Exp 1 (`data_exp1.mat`) | precision noise (SD) | 8° / 16° / 32° | 38 |
 | Exp 2 (`data_exp2.mat`) | motion coherence | 0.6 / 1.0 | 36 |
 
 Both datasets are already filtered to the subjects used in the reported
@@ -19,7 +19,6 @@ helpers/      underlying fitting, stats, and plotting functions
 data/         data_exp1.mat, data_exp2.mat
 output/       CSVs written by the pipeline
 figure/       PNG/PDF figures written by the pipeline
-docs/         project write-ups
 ```
 
 ## Usage
@@ -37,16 +36,11 @@ inspect one stage at a time.
 **Requires:** MATLAB with the Statistics and Machine Learning Toolbox
 and Optimization Toolbox (developed/tested on R2023b).
 
-## Key finding
-
-For the coherence manipulation (Exp 2), a reduced model with κ fixed
-and only d′ free wins on BIC for most subjects — the apparent κ shift
-in the full model reflects a κ↔d′ trade-off, not a real kernel-width
-change. The motion-SD manipulation (Exp 1), by contrast, shifts both κ
-and d′ genuinely.
 
 ## Reference
 
 Schurgin, M. W., Wixted, J. T., & Brady, T. F. (2020). Psychophysical
 scaling reveals a unified theory of visual memory strength. *Nature
 Human Behaviour*, 4(11), 1156–1172.
+
+Roitman, J. D., & Shadlen, M. N. (2002). Response of neurons in the lateral intraparietal area during a combined visual discrimination reaction time task. Journal of neuroscience, 22(21), 9475-9489.
