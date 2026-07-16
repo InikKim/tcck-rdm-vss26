@@ -1,10 +1,6 @@
 # TCC_vonMises_rdm
 
-Modeling visual working-memory recall errors for a moving-dot direction
-task with the **Target Confusability Competition (TCC)** model
-(Schurgin, Wixted & Brady, 2020), to ask whether degraded recall
-reflects a weaker memory signal (d′), a wider similarity kernel
-(precision, κ), or both.
+Modeling visual working-memory recall errors for motion using random dot motion task (Roitman & Shadlen, 2002) with a varient of the **Target Confusability Competition (TCC)** model (Schurgin, Wixted & Brady, 2020).
 
 | Experiment | Manipulation | Conditions | N |
 |---|---|---|---|
